@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Your Name | Frontend Developer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: #f4f6fb;
+      color: #111;
+    }
+
+    nav {
+      background: white;
+      padding: 18px 20px;
+      box-shadow: 0 2px 10px rgba(0,0,0,.08);
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+
+    .nav-container {
+      max-width: 1000px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: 700;
+      color: #4f46e5;
+    }
+
+    .nav-links a {
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: 600;
+      color: #333;
+    }
+
+    .nav-links a:hover {
+      color: #4f46e5;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 70px 20px;
+    }
+
+    .hero {
+      text-align: center;
+      padding-top: 100px;
+    }
+
+    .hero h1 {
+      font-size: 40px;
+    }
+
+    .hero span {
+      color: #4f46e5;
+    }
+
+    .hero p {
+      margin: 15px auto;
+      max-width: 700px;
+      color: #555;
+      font-size: 18px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      background: #4f46e5;
+      color: white;
+      padding: 12px 28px;
+      border-radius: 6px;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 30px;
+      margin-bottom: 50px;
+    }
+
+    .about {
+      background: white;
+      border-radius: 12px;
+      padding: 40px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    }
+
+    .about p {
+      font-size: 17px;
+      color: #444;
+      line-height: 1.8;
+      text-align: center;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: white;
+      padding: 26px;
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(0,0,0,.08);
+      text-align: center;
+    }
+
+    .card h3 {
+      color: #4f46e5;
+      margin-bottom: 10px;
+    }
+
+    .contact-form {
+      max-width: 500px;
+      margin: auto;
+      display: grid;
+      gap: 15px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      padding: 14px;
+      border: 1px solid #bbb;
+      border-radius: 6px;
+      font-size: 15px;
+    }
+
+    .contact-form button {
+      padding: 14px;
+      border: none;
+      background: #4f46e5;
+      color: white;
+      font-weight: 600;
+      cursor: pointer;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 25px;
+      margin-top: 50px;
+    }
+
+    @media(max-width:600px){
+      .hero h1 {
+        font-size: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+  <div class="nav-container">
+    <div class="logo">Vagre Charan</div>
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <h1>Hi, I'm <span>Vagre Charan</span></h1>
+  <p>Fresher Frontend Developer with strong practical skills in HTML, CSS, JavaScript, and C Programming.</p>
+  <a href="#contact" class="btn">Hire Me</a>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2 class="section-title">About Me</h2>
+  <div class="about">
+    <p>
+      I am a motivated fresher who has completed 10+2 education and developed strong coding skills through self-learning and practice. I specialize in frontend web development using HTML, CSS, and JavaScript and also hold a certification in C Programming. I am eager to start my career in the IT industry and contribute my skills to a professional organization.
+    </p>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <h2 class="section-title">Education</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>10+2 (Intermediate)</h3>
+      <P>10 Class SCGPA:80%</P>
+      <P>12 Class SCGPA:44%</P>
+      <p>Completed Higher Secondary Education</p>
+      <p>Year: 2024</p>
+    </div>
+
+    <div class="card">
+      <h3>Self Learning - Web Development</h3>
+      <p>HTML, CSS, JavaScript</p>
+      <p>Practical Hands-on Practice</p>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <h2 class="section-title">Technical Skills</h2>
+  <div class="grid">
+
+    <div class="card">
+      <h3>HTML</h3>
+      <p>Semantic Structure & Accessibility</p>
+    </div>
+
+    <div class="card">
+      <h3>CSS</h3>
+      <p>Responsive Design, Flexbox & Grid</p>
+    </div>
+
+    <div class="card">
+      <h3>JavaScript</h3>
+      <p>Basic Programming & DOM Manipulation</p>
+    </div>
+
+    <div class="card">
+      <h3>C Programming</h3>
+      <p>Fundamentals & Logic Building</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certifications">
+  <h2 class="section-title">Certifications</h2>
+  <div class="grid">
+
+    <div class="card">
+      <h3>C Programming Certification</h3>
+      <p>Certified in C Language Fundamentals</p>
+    </div>
+
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2 class="section-title">Contact Me</h2>
+
+  <form class="contact-form" onsubmit="sendMessage(event)">
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea rows="4" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2025 Your Name | Fresher Frontend Developer</p>
+</footer>
+
+<script>
+  function sendMessage(e){
+    e.preventDefault();
+    alert("Message sent successfully!");
+  }
+</script>
+
+</body>
+</html>
